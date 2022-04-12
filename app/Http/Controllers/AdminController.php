@@ -39,4 +39,9 @@ class AdminController extends Controller
     {
         return view('admin.product');
     }
+
+    public function add_product(Request $request)
+    {
+        
+    }
 }

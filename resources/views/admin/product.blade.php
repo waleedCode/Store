@@ -46,7 +46,8 @@
 
               <h1 class="font_size">Add Product</h1>
 
-              <form>
+              <form action="{{('/add_product')}}" method="POST" enctype="multipart/form-data">
+              @csrf
               <div class="div_design">
               <label >Product Title :</label>
               <input class="text_color" type="text" name="title" placeholder="اكتب اسم المنتج" required="">
