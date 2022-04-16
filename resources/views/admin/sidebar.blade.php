@@ -12,8 +12,8 @@
             <span class="count bg-success"></span>
           </div>
           <div class="profile-name">
-            <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-            <span>Gold Member</span>
+            <h5 class="mb-0 font-weight-normal">المستخدم </h5>
+            <span>نشط </span>
           </div>
         </div>
         <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -25,7 +25,7 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+              <p class="preview-subject ellipsis mb-1 text-small">اعدادات الحساب </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+              <p class="preview-subject ellipsis mb-1 text-small">تغير كلمة المرور </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -54,14 +54,14 @@
       </div>
     </li>
     <li class="nav-item nav-category">
-      <span class="nav-link">Navigation</span>
+      <span class="nav-link">التنقل</span>
     </li>
     <li class="nav-item menu-items">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="">
         <span class="menu-icon">
           <i class="mdi mdi-speedometer"></i>
         </span>
-        <span class="menu-title">Dashboard</span>
+        <span class="menu-title">لوحة التحكم</span>
       </a>
     </li>
     <li class="nav-item menu-items">
@@ -69,13 +69,13 @@
         <span class="menu-icon">
           <i class="mdi mdi-laptop"></i>
         </span>
-        <span class="menu-title">Products</span>
+        <span class="menu-title">الشاحنات</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{{('/view_product')}}">Add Product</a></li>
-          <li class="nav-item"> <a class="nav-link" href="">Show Product</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{('/view_product')}}">اضافة شاحنة </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{url('show_product')}}">عرض الشاحنات </a></li>
         </ul>
       </div>
     </li>
@@ -84,7 +84,7 @@
         <span class="menu-icon">
           <i class="mdi mdi-playlist-play"></i>
         </span>
-        <span class="menu-title">Category</span>
+        <span class="menu-title">انواع الشاحنات</span>
       </a>
     </li>
     

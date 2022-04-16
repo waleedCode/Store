@@ -42,54 +42,98 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+            @if(session()->has('message'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                {{session()->get('message')}}
+            </div>
+            @endif
+
             <div class="div_center">
 
-              <h1 class="font_size">Add Product</h1>
+              <h1 class="font_size">اضافة شاحنة </h1>
 
               <form action="{{('/add_product')}}" method="POST" enctype="multipart/form-data">
               @csrf
               <div class="div_design">
-              <label >Product Title :</label>
-              <input class="text_color" type="text" name="title" placeholder="اكتب اسم المنتج" required="">
+              <label >اسم الشاحنة  :</label>
+              <input class="text_color" type="text" name="title" placeholder="اكتب اسم الشاحنة" required="">
               </div>
 
               <div class="div_design">
-                <label >Product Desc:</label>
-                <input class="text_color" type="text" name="description" placeholder=" اكتب الوصف المنتج" required="">
+                <label > نوع تسجيل الشاحنة :</label>
+                <input class="text_color" type="text" name="" placeholder=" اكتب نوع التسجيل " required="">
                 </div>
-
+                
                 <div class="div_design">
-                  <label >Product price :</label>
-                  <input class="text_color" type="number" name="price" placeholder="اكتب سعر المنتج"required="">
+                  <label >   ماركة الشاحنة :</label>
+                  <input class="text_color" type="text" name="description" placeholder=" اكتب ماركة الشاحنة " required="">
                   </div>
 
                   <div class="div_design">
-                    <label >Discount Price :</label>
-                    <input class="text_color" type="number" name="dis_price" placeholder="">
+                    <label >  طراز الشاحنة :</label>
+                    <input class="text_color" type="text" name="" placeholder=" اكتب نوع التسجيل ">
                     </div>
 
+                <div class="div_design">
+                  <label >سنة  الصنع  :</label>
+                  <input class="text_color" type="number" name="price" placeholder="اكتب  سنة الصنع"required="">
+                  </div>
+
                   <div class="div_design">
-                    <label >Product Quantity:</label>
-                    <input class="text_color" type="number" name="quantity" min="0" placeholder="اكتب كمية المنتج"required="">
+                    <label >حمولة الشاحنة  :</label>
+                    <input class="text_color" type="number" name="dis_price" placeholder="" required>
                     </div>
+
+                    <div class="div_design">
+                      <label > الموديل :</label>
+                      <input class="text_color" type="number" name="quantity" min="0" placeholder="  "required="">
+                      </div> 
+                      
+                      <div class="div_design">
+                        <label > الرقم التسلسلي :</label>
+                        <input class="text_color" type="number" name="" min="0" placeholder="  ">
+                        </div>
+
+                        <div class="div_design">
+                          <label > رقم اللوحة :</label>
+                          <input class="text_color" type="number" name="" min="0" placeholder="  >
+                          </div>
+
+                          <div class="div_design">
+                            <label > اللون :</label>
+                            <input class="text_color" type="text" name="" min="0" placeholder="  ">
+                            </div>
+
+                            <div class="div_design">
+                              <label > تاريخ انتهاء الاستمارة :</label>
+                              <input class="text_color" type="date" name="" min="0" placeholder="">
+                              </div>
 
                     
 
                       <div class="div_design">
-                        <label >Product Category:</label>
-                        <select class="text_color" name="category">
-                          <option value="" selected="" >Add category here</option required="">
-                          <option>shirt</option>
+                        <label >الانواع :</label>
+                        <select class="text_color" name="category" required="">
+                          <option value="" selected="" >اختار نوع الشاحنة  </option>
+                          @foreach($category as $category)
+                          <option>
+                            {{$category->category_name}}
+                          </option>
+
+                          @endforeach
+                          
+                        </select>
                         </select>
                      </div>
 
                      <div class="div_design">
-                      <label >Product Image:</label>
+                      <label >صورة الشحانة :</label>
                       <input type="file" name="image" required="">
                       </div>
 
                       <div class="div_design">
-                        <input class="btn btn-primary" type="submit" name="submit" value="Add product" >
+                        <input class="btn btn-primary" type="submit" name="submit" value="اضافة الشاحنة" >
 
                       </div>
                     </form>

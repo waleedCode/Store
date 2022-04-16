@@ -47,13 +47,13 @@
                 </div>
                 @endif
                 <div class="div_center">
-                    <h2 class="h2_font">اضافة قسم</h2>
+                    <h2 class="h2_font">اضافة نوع شاحنة</h2>
                     <form action="{{url('/add_category')}}" method="POST">
 
                         @csrf
 
-                        <input class="input_color" type="text" name="category"  placeholder=" اكتب القسم الجديد">
-                        <input class="btn btn-primary" type="submit" name="submit" value="اضافة قسم">
+                        <input class="input_color" type="text" name="category"  placeholder=" اكتب النوع الجديد">
+                        <input class="btn btn-primary" type="submit" name="submit" value="اضافة نوع">
                     </form>
                 </div>
 

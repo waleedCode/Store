@@ -43,11 +43,11 @@
                </li>
                @else
                <li class="nav-item">
-                  <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
+                  <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">تسجيل الدخول</a>
                </li>
 
                <li class="nav-item">
-                  <a class="btn btn-success" href="{{ route('register') }}">Register</a>
+                  <a class="btn btn-success" href="{{ route('register') }}">انشاء حساب</a>
                </li>
              @endauth
               @endif

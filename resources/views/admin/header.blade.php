@@ -9,7 +9,7 @@
     <ul class="navbar-nav w-100">
       <li class="nav-item w-100">
         <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-          <input type="text" class="form-control" placeholder="Search products">
+          <input type="text" class="form-control" placeholder="البحث ">
         </form>
       </li>
     </ul>
@@ -17,7 +17,7 @@
       <li class="nav-item dropdown d-none d-lg-block">
         <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ </a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
-          <h6 class="p-3 mb-0">Projects</h6>
+          <h6 class="p-3 mb-0">اضافة</h6>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject ellipsis mb-1">Software Development</p>
+              <p class="preview-subject ellipsis mb-1"> </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject ellipsis mb-1">UI Development</p>
+              <p class="preview-subject ellipsis mb-1"></p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -70,7 +70,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+              <img src="admin/assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
             </div>
             <div class="preview-item-content">
               <p class="preview-subject ellipsis mb-1"></p>
@@ -80,7 +80,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+              <img src="admin/assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
             </div>
             <div class="preview-item-content">
               <p class="preview-subject ellipsis mb-1"></p>
@@ -90,7 +90,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+              <img src="admin/assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
             </div>
             <div class="preview-item-content">
               <p class="preview-subject ellipsis mb-1"></p>
@@ -128,8 +128,8 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject mb-1">Settings</p>
-              <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+              <p class="preview-subject mb-1">الاعدادات</p>
+              <p class="text-muted ellipsis mb-0"> تحديث لوحة التحكم  </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -140,12 +140,12 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject mb-1">Launch Admin</p>
-              <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+              <p class="preview-subject mb-1">  طلب انضمام   </p>
+              <p class="text-muted ellipsis mb-0"> </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
-          <p class="p-3 mb-0 text-center">See all notifications</p>
+          {{-- <p class="p-3 mb-0 text-center">See all notifications</p> --}}
         </div>
       </li>
 

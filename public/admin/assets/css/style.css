@@ -106,6 +106,9 @@
 /* === Import template variables === */
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
+body{
+  direction: rtl;
+}
 @-moz-keyframes flash {
   0% {
     opacity: 1; }
