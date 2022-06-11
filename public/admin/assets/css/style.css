@@ -12874,7 +12874,7 @@ button.bg-dark:focus {
   background-color: black !important; }
 
 .bg-white {
-  background-color: #ffffff !important; }
+  background-color: #fcfcfc !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -17889,7 +17889,7 @@ div.tagsinput {
   .table thead th, .jsgrid .jsgrid-table thead th {
     border-top: 0;
     border-bottom-width: 1px;
-    font-weight: 500;
+    font-weight: 400;
     color: #6c7293; }
     .table thead th i, .jsgrid .jsgrid-table thead th i {
       margin-left: 0.325rem; }
@@ -17903,8 +17903,8 @@ div.tagsinput {
     .table th img, .jsgrid .jsgrid-table th img,
     .table td img,
     .jsgrid .jsgrid-table td img {
-      width: 30px;
-      height: 30px;
+      width: 100px;
+      height: 100px;
       border-radius: 100%; }
     .table th .badge, .jsgrid .jsgrid-table th .badge,
     .table td .badge,
@@ -17919,7 +17919,9 @@ div.tagsinput {
     .jsgrid .table-borderless.jsgrid-table th {
       border: none; }
   .table .table-dark, .jsgrid .jsgrid-table .table-dark {
-    background: #212529; }
+    background: #212529; 
+  
+  }
   .table.table-contextual, .jsgrid .table-contextual.jsgrid-table {
     color: #ffffff; }
 

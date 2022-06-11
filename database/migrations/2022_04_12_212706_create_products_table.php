@@ -16,13 +16,13 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
 
-            $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->string('board_number')->nullable();
             $table->string('image')->nullable();
             $table->string('category')->nullable();
-            $table->string('quantity')->nullable();
-            $table->string('price')->nullable();
-            $table->string('discount_price')->nullable();
+            $table->date('car_model')->nullable();
+            $table->string('car_brand')->nullable();
+            $table->string('card_expiration_date')->nullable();
+            $table->string('vehicle_registration_expiry_date')->nullable();
             $table->timestamps();
         });
     }
